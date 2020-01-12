@@ -1,41 +1,22 @@
-# GROBID-Dictionaries
+# GROBID-Cat
 
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-[![Version](https://img.shields.io/badge/version-0.4.3--SNAPSHOT-pink.svg)](https://github.com/MedKhem/grobid-dictionaries/blob/master/README.md)
+[![Version](https://img.shields.io/badge/version-1.0.0--SNAPSHOT-pink.svg)](https://github.com/MedKhem/grobid-cat/blob/master/README.md)
 [![Documentation Status](https://readthedocs.org/projects/grobid-dictionaries/badge/?version=latest)](https://readthedocs.org/projects/grobid-dictionaries/?badge=latest) 
-[![Docker build](https://dockerbuildbadges.quelltext.eu/status.svg?organization=medkhem&repository=grobid-dictionaries)](https://hub.docker.com/r/medkhem/grobid-dictionaries/builds/)
 ## Purpose
 
-GROBID-Dictionaries is a GROBID sub-project, implementing a java machine learning library, for structuring digitized lexical resources and entry-based documents with encyclopedic or bibliographic content. It allows the parsing, extraction and structuring of text information in such resources. 
+GROBID-Cat is a GROBID-Dictionaires fork, implementing a java machine learning library, for structuring digitized catalogues. It allows the parsing, extraction and structuring of text information in such resources. 
 
 ## Approach
 
-GROBID-Dictionaries is based on cascading CRF models. The diagram below presents the architecture enabling the processing and the transfer of the text information through the models.
-
-![GROBID Dictionaries Structure](docs/img/modelsIn.png)
-
-__Dictionary Segmentation__
-This is the first model and has as goal the segmentation of each dictionary page into 3 main blocks: Headnote, Body and Footnote. Another block, "dictScarp" could be generated for text information that do not belong to the principal blocks
-
-__Dictionary Body Segmentation__
-The second model gets the Body, recognized by the first model, and processes it to recognize the boundaries of each lexical entry.
-
-__Lexical Entry__
-The third model parses each lexical entry, recognized by the second model, to segment it into 4 main blocks: Form, Etymology, Senses, Related Entries. A "dictScrap" block is there as well for unrecognised information. 
-
-
-__The rest of the models__
-The same logic applies respectively for the recognised blocks in a lexical entry by having a specific model for each one of them
-
-
-*N.B*: The current architecture could change at any milestone of the project, as soon as new ideas or technical constraints emerge. 
+GROBID-Cat is based on cascading CRF models. 
 
 ## Input/Output
 
-GROBID-Dictionaries takes as input lexical resources digitized in PDF format. Each model of the aforementioned components generates a TEI P5-encoded hierarchy of the different recognized text structures at that specific cascading level.
+GROBID-Dictionaries takes as input digitized catalogues in PDF format. Each model of the aforementioned components generates a TEI P5-encoded hierarchy of the different recognized text structures at that specific cascading level.
+![Cat1](docs/img/1873-08-RDA-N037.jpg){:height="50%" width="50%"}
+![Cat2](docs/img/bienal_saoPaulo_1951.jpg){:height="50%" width="50%"}
 
-## Docker Use
-To shortcut the installation of the tool, the [Docker manual](https://github.com/MedKhem/grobid-dictionaries/wiki/Docker_Instructions) could be followed to use the latest image of the tool
 
 ## To Cite
 
@@ -58,4 +39,4 @@ For more expert and development uses, the documentation of the tool is detailed 
 
 
 ## Contact
-Mohamed Khemakhem (<mohamed.khemakhem@inria.fr>), Laurent Romary (<laurent.romary@inria.fr>)
+Mohamed Khemakhem (<mohamed.khemakhem@inria.fr>), Laurent Romary (<laurent.romary@inria.fr>), Simon Gabay (<simon.gabay@unine.ch>), Béatrice Joyeux-Prunel (<Beatrice.Joyeux-Prunel@unige.ch>), Léa saint-raymond (<lea.saint-raymond@ens.fr>)
