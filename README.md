@@ -13,6 +13,7 @@ GROBID-Cat is a GROBID-Dictionaries fork. It implements a java machine learning 
 GROBID-Cat takes as input digitized catalogues in PDF format. Each model of the aforementioned components generates a TEI P5-encoded hierarchy of the different recognized text structures at that specific cascading level.
 <img src="docs/img/1873-08-RDA-N037.jpg" width="50%" height="50%"/>
 <img src="docs/img/bienal_saoPaulo_1951.jpg" width="50%" height="50%"/>
+<img src="docs/img/1881-03-RDA-N067-p7-scudery-parts.jpg" width="50%" height="50%"/>
 
 
 
@@ -34,4 +35,4 @@ David Lindemann, Mohamed Khemakhem, Laurent Romary. Retro-digitizing and Automat
 
 
 ## Contact
-Mohamed Khemakhem (<mohamed.khemakhem@inria.fr>), Laurent Romary (<laurent.romary@inria.fr>), Simon Gabay (<simon.gabay@unine.ch>), Béatrice Joyeux-Prunel (<Beatrice.Joyeux-Prunel@unige.ch>), Léa saint-raymond (<lea.saint-raymond@ens.fr>)
+Mohamed Khemakhem (<mohamed.khemakhem@inria.fr>), Laurent Romary (<laurent.romary@inria.fr>), Simon Gabay (<simon.gabay@unine.ch>), Béatrice Joyeux-Prunel (<Beatrice.Joyeux-Prunel@unige.ch>), Léa Saint-Raymond (<lea.saint-raymond@ens.fr>)
